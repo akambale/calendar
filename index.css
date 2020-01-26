@@ -1,0 +1,112 @@
+*,
+*::after,
+*::before,
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+/* usually don't want to create a blanket 
+rule like this, but in the interest of time */
+li {
+  list-style-type: none;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.month-year {
+  margin: 4rem;
+  font-size: 3rem;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+}
+
+.cal-body {
+  padding: 2rem 1rem;
+  border: 0.2rem solid lightgray;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+  width: 48rem;
+}
+
+.weekdays {
+  display: flex;
+  font-weight: bold;
+}
+
+.weekdays__square {
+  font-size: 2.5rem;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weekdays__square:hover {
+  background-color: lightgray;
+}
+
+.weekdays__square--weekend {
+  color: red;
+}
+
+.weekdays__border {
+  height: 0.2rem;
+  width: 95%;
+  background-color: lightgray;
+}
+
+.dates {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.arrow {
+  border: none;
+  background-color: lightgray;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 51%;
+  font-weight: bold;
+  color: white;
+  margin: 3rem;
+  font-family: 'Sigmar One';
+  font-size: 2.2rem;
+}
+
+.arrow:hover {
+  background-color: rgb(167, 167, 167);
+}
+
+.arrow:active {
+  transform: scale(0.95);
+}

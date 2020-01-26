@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calendar</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body class="body">
+    <h1 id="month-year" class="month-year">Month 2020</h1>
+    <main class="main">
+      <button class="arrow" onclick="changeCal(decrementMonth)">
+        <<
+      </button>
+      <div class="cal-body">
+        <ul class="weekdays">
+          <li class="weekdays__square weekdays__square--weekend">S</li>
+          <li class="weekdays__square">M</li>
+          <li class="weekdays__square">T</li>
+          <li class="weekdays__square">W</li>
+          <li class="weekdays__square">T</li>
+          <li class="weekdays__square">F</li>
+          <li class="weekdays__square weekdays__square--weekend">S</li>
+        </ul>
+        <div class="weekdays__border"></div>
+        <ul id="dates" class="dates"></ul>
+      </div>
+      <button class="arrow" onclick="changeCal(incrementMonth)">
+        >>
+      </button>
+    </main>
+  </body>
+  <script src="index.js" type="text/javascript"></script>
+</html>
